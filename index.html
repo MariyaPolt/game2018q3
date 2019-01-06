@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Little Enchantress</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+              integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
+              crossorigin="anonymous">
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+            <a class="navbar-brand" href="#">Little Enchantress</a>
+            <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#start">Start<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#manual">Manual</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#screenshots">Screenshots</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#author">Author</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <div id="start" class="d-flex align-items-center flex-column justify-content-center"
+             style="min-height: 100vh; background-color: #f2f3e6">
+            <h1>Little Enchantress</h1>
+            <p>Evil monsters attacked the country of a little enchantress! Can you help her to save it?</p>
+            <button type="button" class="btn btn-lg btn-outline-dark" onclick="window.location = './src/app/app.html'">
+                START
+            </button>
+        </div>
+
+        <div id="manual" class="d-flex align-items-center flex-column justify-content-center"
+             style="min-height: 100vh; background-color: #cfe1e3">
+            <h1>MANUAL</h1>
+            <p>When you start the game you must enter your name. You will then be asked to choose a spell.</p>
+            <p>After this the task will appear, if you do it right you hit the monster, otherwise you miss the turn.</p>
+            <p>Then monster hits you. The move goes to you.</p>
+            <p>If the monster is killed, you can go to the next level, where health will increase slightly.</p>
+        </div>
+
+        <div id="screenshots" class="d-flex align-items-center flex-column justify-content-center"
+             style="min-height: 100vh; background-color: #efe2ea">
+            <h1>SCREENSHOTS</h1>
+            <div class="images d-flex align-items-center flex-wrap justify-content-center" style="max-width: 1200px;">
+                <img src="./screenshots/choose-spell.jpg" alt="screenshot" style="width: 360px; margin: 5px;">
+                <img src="./screenshots/task.jpg" alt="screenshot" style="width: 360px; margin: 5px;">
+                <img src="./screenshots/monster-hit.jpg" alt="screenshot" style="width: 360px; margin: 5px;">
+                <img src="./screenshots/next-round.jpg" alt="screenshot" style="width: 360px; margin: 5px;">
+                <img src="./screenshots/game-over.jpg" alt="screenshot" style="width: 360px; margin: 5px;">
+            </div>
+        </div>
+
+        <div id="author" class="d-flex align-items-center flex-column justify-content-center"
+             style="min-height: 100vh; background-color: #eac3cf">
+            <h1>AUTHOR</h1>
+            <p>Mariya Poltoratskaya, contacts:</p>
+            <p>Phone: <a href="tel:+375259378131">+375 (25) 937-81-31</a></p>
+            <p>E-mail: <a href="mailto:mariya.poltoratskaya@gmail.com">mariya.poltoratskaya@gmail.com</a></p>
+        </div>
+
+
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+                integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+                crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+                integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+                crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+                integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+                crossorigin="anonymous"></script>
+
+        <script src="src/landing.js"></script>
+    </body>
+</html>

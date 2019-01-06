@@ -1,0 +1,96 @@
+#idle-enemy {
+    position: absolute;
+    right: 20vh;
+    bottom: 10vh;
+
+    width: 300px;
+    height: 300px;
+}
+
+img.body, img.left-arm, img.right-arm, img.left-leg, img.right-leg, img.face {
+    position: absolute;
+}
+
+img.left-arm {
+    animation: 2s linear 0s normal none infinite running left-arm;
+    -webkit-animation: 2s linear 0s normal none infinite running left-arm;
+    top: 165px;
+    z-index: 0;
+}
+@keyframes left-arm {
+    0% {
+        left: 35px;
+        transform: rotate(0deg);
+    }
+    50% {
+        left: 30px;
+        transform: rotate(10deg);
+    }
+    100% {
+        left: 35px;
+        transform: rotate(0deg);
+    }
+}
+
+
+img.right-arm {
+    animation: 2s linear 0s normal none infinite running right-arm;
+    -webkit-animation: 2s linear 0s normal none infinite running right-arm;
+    top: 165px;
+    z-index: 2;
+}
+@keyframes right-arm {
+    0% {
+        left: 90px;
+        transform: rotate(10deg);
+    }
+    50% {
+        left: 95px;
+        transform: rotate(0deg);
+    }
+    100% {
+        left: 90px;
+        transform: rotate(10deg);
+    }
+}
+
+
+
+img.body {
+    animation: 1s linear 0s normal none infinite running body;
+    -webkit-animation: 1s linear 0s normal none infinite running body;
+    z-index: 1;
+}
+img.face {
+    animation: 1s linear 0s normal none infinite running body;
+    -webkit-animation: 1s linear 0s normal none infinite running body;
+    z-index: 2;
+    left: 20px;
+    margin-top: 70px;
+}
+@keyframes body {
+    0% {
+        top: 5px;
+    }
+    50% {
+        top: 0px;
+    }
+    100% {
+        top: 5px;
+    }
+}
+
+
+
+img.left-leg {
+    top: 215px;
+    left: 50px;
+    z-index: -1;
+}
+
+
+img.right-leg {
+    top: 215px;
+    left: 85px;
+    z-index: -1;
+}

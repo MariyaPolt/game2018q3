@@ -1,0 +1,88 @@
+@import "../../fonts.css";
+
+#player {
+    position: absolute;
+    left: 20vh;
+    bottom: 15vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 332.8px;
+    height: 363.2px;
+}
+
+#player-dying {
+    position: absolute;
+    left: 20vh;
+    bottom: 10vh;
+
+    width: 480px;
+    height: 401px;
+}
+
+#top-block .progress.player {
+    width: 28%;
+    height: 20%;
+    top: 60%;
+    left: 5%;
+    position: absolute;
+    border: 2px solid rgba(100, 100, 100, 0.5);
+}
+
+
+#top-block .name.player {
+    top: 20%;
+    left: 5%;
+    position: absolute;
+}
+
+
+#top-block h2.name.player {
+    font-size: 2rem;
+    font-family: "Adigiana", sans-serif;
+}
+
+
+
+#player img {
+    animation: 1.5s ease-in 0.5s normal none running star;
+    -webkit-animation: 1.5s ease-in 0.5s normal none running star;
+
+    position: absolute;
+
+    width: 0px;
+    height: 0px;
+}
+
+@keyframes star {
+    0% {
+        left: 25vh;
+
+        width: 50px;
+        height: 50px;
+        transform: rotate(0deg);
+    }
+    25% {
+        left: 40vh;
+
+        width: 100px;
+        height: 100px;
+        transform: rotate(180deg);
+    }
+    40% {
+        left: 80vh;
+
+        width: 200px;
+        height: 200px;
+        transform: rotate(360deg);
+    }
+    100% {
+        left: 110vh;
+
+        width: 270px;
+        height: 270px;
+        transform: rotate(720deg);
+    }
+}
